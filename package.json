@@ -1,0 +1,17 @@
+{
+  "name": "node-compression-benchmark",
+  "description": "Lossless compression benchmarking on node.js v18",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": {
+    "name": "Masaru Yamagishi",
+    "email": "yamagishi.iloop@gmail.com"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "~4.8.2"
+  }
+}
