@@ -11,6 +11,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build:nodejs": "npm run -w packages/core build && npm run -w packages/nodejs build",
+    "start:nodejs": "npm run build:nodejs && npm run -w packages/nodejs start"
+  },
   "devDependencies": {
     "typescript": "~4.8.2"
   }

@@ -1,0 +1,32 @@
+{
+  "name": "node-compression-benchmark-nodejs",
+  "version": "1.0.0",
+  "description": "Node compression benchmark for node.js",
+  "author": {
+    "name": "Masaru Yamagishi",
+    "email": "yamagishi.iloop@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.mjs"
+  },
+  "dependencies": {
+    "node-compression-benchmark-core": "^1.0.0",
+    "random": "^3.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14"
+  }
+}

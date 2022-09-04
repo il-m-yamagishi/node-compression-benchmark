@@ -1,0 +1,27 @@
+{
+  "name": "node-compression-benchmark-core",
+  "version": "1.0.0",
+  "description": "Node compression benchmark core",
+  "author": {
+    "name": "Masaru Yamagishi",
+    "email": "yamagishi.iloop@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "pure-rand": "^5.0.1"
+  }
+}

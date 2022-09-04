@@ -9,11 +9,9 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "NodeNext",
-    "outDir": "dist",
-    "declaration": true,
-    "declarationDir": "dist",
     "isolatedModules": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true
   }
