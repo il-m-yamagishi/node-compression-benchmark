@@ -53,10 +53,6 @@ export class BenchmarkSuite {
                 const size = await func.fn();
                 const end = this.getCurrentNanoSec();
                 const nanoSec = (end - start);
-                if (i === 0) {
-                    // first case should be ignored
-                    continue;
-                }
                 if (actualSize !== 0 && actualSize !== size) {
                     throw new Error(`Unmatched size actual=${actualSize} current=${size}`);
                 }

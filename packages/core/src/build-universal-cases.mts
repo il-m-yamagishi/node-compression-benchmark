@@ -6,7 +6,7 @@
 
 import { BenchmarkFunction } from "./benchmark-suite.mjs";
 
-export function buildCases(payload: any): BenchmarkFunction[] {
+export function buildUniversalCases(payload: any): BenchmarkFunction[] {
     return [
         {
             name: "JSON(raw)",

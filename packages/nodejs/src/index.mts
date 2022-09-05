@@ -5,7 +5,7 @@
  */
 
 import { hrtime } from "node:process";
-import { BenchmarkSuite, buildCases, buildPayload, PureRandRandom } from "node-compression-benchmark-core";
+import { BenchmarkSuite, buildUniversalCases, buildPayload, PureRandRandom } from "node-compression-benchmark-core";
 
 function getCurrentNanoSec(): bigint {
     return hrtime.bigint();
@@ -14,7 +14,12 @@ function getCurrentNanoSec(): bigint {
 const seedRand = 1349678;
 const rand = new PureRandRandom(seedRand);
 const payload = buildPayload(rand);
+const cycles = 100;
 
-const report = await new BenchmarkSuite(buildCases(payload), getCurrentNanoSec, 100).run();
+const report = await new BenchmarkSuite(
+    buildUniversalCases(payload),
+    getCurrentNanoSec,
+    cycles,
+).run();
 
 console.table(report.toObject());

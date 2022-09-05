@@ -5,6 +5,6 @@
  */
 
 export * from './benchmark-suite.mjs';
-export * from './build-cases.mjs';
+export * from './build-universal-cases.mjs';
 export * from './build-payload.mjs';
 export * from './random.mjs';
